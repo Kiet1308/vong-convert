@@ -20,6 +20,7 @@ constexpr LPARAM kJobDone = 1001;
 constexpr LPARAM kJobFailed = 1002;
 
 constexpr float kPi = 3.14159265358979f;
+constexpr const wchar_t* kVersion = L"0.1.0";  // keep in step with res/app.rc
 
 extern HINSTANCE g_hinst;
 extern HWND g_hwndMain;

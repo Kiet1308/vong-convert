@@ -7,3 +7,6 @@ out/
 tools/
 *.exe
 *.dll
+
+# Release packages
+dist/

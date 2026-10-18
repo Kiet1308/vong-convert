@@ -2,6 +2,19 @@
 
 Kéo một file trong Explorer, giữ phím, rồi thả vào vòng tròn để chuyển đổi hoặc xử lý file ngay tại chỗ. Mọi thứ chạy trên máy, không tải file lên đâu cả.
 
+<p>
+  <img src="docs/wheel-convert-light.png" width="32%" alt="Vòng Chuyển đổi, giao diện sáng">
+  <img src="docs/wheel-tools-dark.png" width="32%" alt="Vòng Công cụ với vòng ngoài chọn mức nén">
+  <img src="docs/wheel-actions-dark.png" width="32%" alt="Vòng Thao tác">
+</p>
+<img src="docs/crop.png" alt="Màn hình cắt ảnh với tỉ lệ 4:3">
+
+## Tải về
+
+Tải `VongConvert-win64.zip` ở mục [Releases](https://github.com/Kiet1308/vong-convert/releases), giải nén rồi chạy `VongConvert.exe`. Cần thêm FFmpeg (xem [Cần có](#cần-có)).
+
+App chưa được ký số, nên lần đầu chạy Windows SmartScreen có thể hiện "Windows protected your PC". Bấm **More info** rồi **Run anyway**.
+
 | Phím (giữ khi đang kéo) | Vòng | Ví dụ |
 |---|---|---|
 | Shift | Chuyển đổi | PNG → WebP, MOV → MP4, WAV → MP3, SRT → VTT, DOCX → PDF, XLSX → CSV, PDF → ảnh, ảnh → PDF |
@@ -95,3 +108,7 @@ VongConvert.exe --bench <ảnh>
 - Office được điều khiển qua COM. App chỉ đóng Word/Excel/PowerPoint khi nó không còn file nào khác đang mở. Nếu một lần chuyển đổi bị treo, app dừng nó sau 3 phút và chỉ tắt bản Office không có cửa sổ mà lần đó mở ra.
 - Không dùng `tar.exe` của Windows vì nó làm hỏng tên file có dấu tiếng Việt.
 - Chưa có PDF → Word: tính năng nhập PDF của Word bị treo khi chạy ngầm.
+
+## Giấy phép
+
+[MIT](LICENSE). FFmpeg, 7-Zip và Microsoft Office không đi kèm; mỗi phần mềm có giấy phép riêng.

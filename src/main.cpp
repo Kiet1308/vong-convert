@@ -297,7 +297,7 @@ void ShowTrayMenu(POINT pt) {
   AppendMenuW(style, MF_STRING | (g_settings.solid ? MF_CHECKED : 0), ID_SOLID, L"Đặc");
 
   HMENU m = CreatePopupMenu();
-  AppendMenuW(m, MF_STRING | MF_GRAYED, 0, L"Vòng Convert");
+  AppendMenuW(m, MF_STRING | MF_GRAYED, 0, (std::wstring(L"Vòng Convert ") + kVersion).c_str());
   AppendMenuW(m, MF_SEPARATOR, 0, nullptr);
   AppendMenuW(m, MF_STRING, ID_HELP, L"Cách dùng");
   AppendMenuW(m, MF_POPUP, (UINT_PTR)keys, L"Phím giữ khi kéo");
