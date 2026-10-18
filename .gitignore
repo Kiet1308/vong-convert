@@ -1,0 +1,9 @@
+# CMake build trees
+build/
+build-*/
+out/
+
+# Tools placed next to the exe for local runs
+tools/
+*.exe
+*.dll
